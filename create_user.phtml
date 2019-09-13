@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<HTML lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Inscription</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="style.css" media="all"/>
+	</head>
+	<body>
+		
+		<h2>Formulaire d'inscription</h2></br></br>
+		
+		<?php if(isset($error)):?>
+			<p class="error">
+				<?= $error; ?>
+			</p>
+		<?php endif; ?>
+		
+		
+		<div>
+			<form id="signinForm" action="" method="post">
+			<div>
+				<label for="fname">Prenom</label>
+			</div>
+			<div>				
+				<input type="text" id="fname" name="fname">
+			</div>
+			<div>
+				<label for="lname">Nom</label>
+			</div>
+			<div>				
+				<input type="text" id="lname" name="lname" >
+			</div>
+			<div>
+				<label for="email">Email</label>
+			</div>
+			<div>				
+				<input type="email" id="email" name="email">
+			</div>
+			<div>
+				<label for="password">Mot de passe</label>
+			</div>
+			<div>				
+				<input type="password" id="password" name="password" >
+			</div></br></br>
+			
+				
+			
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+			</form>
+		</div>
+</HTML>
